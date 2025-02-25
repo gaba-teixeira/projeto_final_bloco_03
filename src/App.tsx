@@ -11,6 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
+         <div className="min-h-[80vh]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categorias" element={<ListarCategoria />} />
@@ -18,6 +19,7 @@ function App() {
           <Route path="/editarcategoria/:id" element={<FormCategoria />} />
           <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
         </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </>
